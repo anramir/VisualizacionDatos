@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prácticas asignatura Herramientas de Visualización</title>
+	<link rel="stylesheet" href="estilo.css">	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<script language="javascript" type="text/javascript" src="http://jlsantos.tel.unir.net/jquery/jqplot/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="http://jlsantos.tel.unir.net/jquery/jqplot/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="http://jlsantos.tel.unir.net/jquery/jqplot plugins/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src=" http://jlsantos.tel.unir.net/jquery/jqplot/jqplot.pointLabels.min.js"></script>
+	<script type="text/javascript" src="http://jlsantos.tel.unir.net/jquery/jqplot /plugins/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" language="javascript" src="/plugins/jqplot.dateAxisRenderer.js"></script>
+	<script type="text/javascript" src="/plugins/jqplot.highlighter.min.js"></script>
+	<script src="jquery.csv-0.71.js"></script>
+	<h1>Evolución de los precios de energía para consumo doméstico</h1>
+	<div id="menu">
+	<ul>
+		<li><a href="index.html">Evolución por años</a></li>
+		<li><a href="lineplot.html">Evolución por países</a></li>
+	</ul>
+	</div>	
+
+
+	
+</head>
+
+<body>
+	
+	<script type="text/javascript" src="paises.js"></script>
+	
+	<div id="controlesb">
+			
+			<select id="pais">
+				  <option value="Albania">Albania</option>
+				  <option value="Austria">Austria</option>
+				  <option value="Belgium">Belgium</option>
+				  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+				  <option value="Bulgaria">Bulgaria</option>
+				  <option value="Croatia">Croatia</option>
+				  <option value="Denmark">Denmark</option>
+				  <option value="Estonia">Estonia</option>
+				  <option value="Finland">Finland</option>
+				  <option value="France">France</option>
+				  <option value="Germany">Germany</option>
+				  <option value="Greece">Greece</option>
+				  <option value="Iceland">Iceland</option>
+				  <option value="Ireland">Ireland</option>
+				  <option value="Italy">Italy</option>
+				  <option value="Latvia">Latvia</option>
+				  <option value="Liechtenstein">Liechtenstein</option>
+				  <option value="Lithuania">Lithuania</option>
+				  <option value="Luxembourg">Luxembourg</option>
+				  <option value="Malta">Malta</option>
+				  <option value="Montenegro">Montenegro</option>
+				  <option value="Netherlands">Netherlands</option>
+				  <option value="Norway">Norway</option>
+				  <option value="Poland">Poland</option>
+				  <option value="Portugal">Portugal</option>
+				  <option value="Romania">Romania</option>
+				  <option value="Serbia">Serbia</option>
+				  <option value="Slovakia">Slovakia</option>
+				  <option value="Slovenia">Slovenia</option>
+				  <option value="Spain">Spain</option>
+				  <option value="Sweden">Sweden</option>
+				  <option value="Turkey">Turkey</option>
+				  <option value="United Kingdom">United Kingdom</option>
+			</select> 
+			<form id="energia_selector">
+				<input type="radio" name="energia" value="Natural gas" checked>Gas natural
+				<br>
+				<input type="radio" name="energia" value="Electrical energy" checked>Energía eléctrica
+			</form> 
+	<button type="button" id="escribir" onclick="drawchart()">Actualizar</button>	
+	</div>
+	<div id="chartline"></div>
+</body>
+	
+</html> 

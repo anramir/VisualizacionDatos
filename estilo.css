@@ -1,0 +1,147 @@
+body {
+    background-color: #888888	;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    margin-left: 0%;
+    
+}
+
+
+#chartline{
+
+    width:700px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#chartdiv{
+
+    width: 30%;
+    height: 30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu{
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grafico{
+    position: relative;
+    margin-top: 3%;
+	font-size: 20pt;
+	text-align: center;
+	font-style: bold;
+
+}
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    float: left;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+
+a:hover {
+    background-color: #3b3b3b;
+}
+
+li {
+    display: inline;
+}
+
+#mapa{
+ 	
+    position:absolute;
+     margin-top:  80px;
+    right:50%;
+    width: 40%;
+}
+
+#barras{
+    position:absolute;
+     margin-top: -100px;
+    left: 50%;
+    width: 40%;
+
+
+}
+
+
+p {
+    font-size: 20px;
+}
+
+#controlesa{
+    position:relative;
+    margin-top: 1%;
+    margin-left: 45%;
+    margin-right: auto;
+}
+
+#controlesb{
+    position:relative;
+    margin-top: 3%;
+    margin-left: 45%;
+    margin-right: auto;
+}
+button{
+	-webkit-border-radius: 5;
+  	-moz-border-radius: 5;
+	  border-radius: 5px;
+	  text-shadow: 0px 1px 3px #666666;
+	  font-family: Arial;
+	  color: #ffffff;
+	  font-size: 12px;
+	  width: 150px;
+	  background: #000000;
+	  padding: 10px 20px 10px 20px;
+	  text-decoration: none;
+}
+
+button:hover {
+  background: #3b3b3b;
+  text-decoration: none;
+  
+}
+
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: black;
+    color:#ffffff;
+    width: 150px;	
+    text-align: center;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+select:hover{
+	  background: #3b3b3b;
+  text-decoration: none;
+}

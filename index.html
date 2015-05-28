@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prácticas asignatura Herramientas de Visualización</title>
+	<link rel="stylesheet" href="estilo.css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<h1>Evolución de los precios de energía para consumo doméstico</h1>
+	<div id="menu">
+	<ul>
+		<li><a href="index.html">Evolución por años</a></li>
+		<li><a href="lineplot.html">Evolución por países</a></li>
+	</ul>
+	</div>	
+
+</head>
+
+<body>	
+	<script type="text/javascript" src="mapa.js"></script>
+	<div id="grafico"> Cost (€/kWh) of Natural gas in year 2007</div>	
+			<div id="controlesa" >
+				 <select id="year">
+				  <option value="2007">2007</option>
+				  <option value="2008">2008</option>
+				  <option value="2009">2009</option>
+				  <option value="2010">2010</option>
+				  <option value="2011">2011</option>
+				  <option value="2012">2012</option>
+				  <option value="2013">2013</option>
+				  <option value="2014">2014</option>
+				</select> 
+			
+				 <form id="energia_selector">
+					<input type="radio" name="energia" value="Natural gas" checked>Gas natural
+					<br>
+					<input type="radio" name="energia" value="Electrical energy" checked>Energía eléctrica
+				</form> 
+				<button type="button" id="actualizar" onclick="cambio()">Actualizar</button>
+			</div>
+			<div id="mapa" ></div>
+			<div id="barras" ></div>	
+</body>
+	
+</html> 
